@@ -38,9 +38,8 @@ body{
     position: absolute;
     bottom: 25%;  
     text-align: center;
-}
 
-#bars_container .bars{
+    & .bars{
     width: 40px;
     height: 200px;
     display: inline-block;
@@ -53,12 +52,11 @@ body{
     background: #262626;
     box-shadow: -9px 9px 18px #181818,
                 9px -9px 18px #343434;
+    }
 }
 
 .circle_vis{
-    background: #262626;
-    box-shadow: inset -9px 9px 18px #181818,
-                inset 9px -9px 18px #343434;        
+    background: #262626;        
     width: 200px;
     height: 200px;
     position: absolute;
@@ -68,7 +66,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    box-shadow: inset -9px 9px 18px #181818,
+                inset 9px -9px 18px #343434;
 }
 
 .circle{
@@ -115,16 +114,16 @@ body{
     bottom: 5%;
     display: flex;
     flex-direction: row;
-}
 
-#music_controler audio{
-   color: #205cff;
-   border-radius: 0.5rem;
-   width: 20rem;
-   margin-left: 1.9rem;
-   background: #404040;
-   box-shadow: -9px 9px 18px #181818,
+    & audio{
+     color: #205cff;
+     border-radius: 0.5rem;
+     width: 20rem;
+     margin-left: 1.9rem;
+     background: #404040;
+     box-shadow: -9px 9px 18px #181818,
                9px -9px 18px #343434;
+    }
 }
 
 input{
